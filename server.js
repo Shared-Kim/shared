@@ -13,6 +13,7 @@ app.use('/yoon', yoonRouter);
 
 // react 정적 리소스 사용을 위해 선언
 app.use(express.static(path.join(__dirname, '/react_part/zxoo_view/build')));
+app.use(express.static(path.join(__dirname, '/react_part/yoon_view/build')));
 
 const http = require('http').createServer(app);
 http.listen(8080, function () {
