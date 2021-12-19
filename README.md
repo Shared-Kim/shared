@@ -31,3 +31,20 @@ $ create-react-app zxoo_view(이름)
 3. react 빌드
 
 npm run build
+
+4. 단위 테스트
+
+jest를 사용하며 /lib/__tests__ 하위에 테스트를 진행할 코드를 작성하여 확인
+npm test ---watch --> --watch 매개변수로 제스트에 파라미터 전달
+npm test -- --coverage --> 단위테스트에 대한 결과를 정략적으로 확인
+
+998. 프로젝트 파일 및 결로 설명
+meadowlark.js --> node 기본 테스트용 js
+
+999. npm 추가 목록
+npm install express-handlebars@3 --> node 화면용 페키지
+/*단위테스트용 페키지
+npm install --save-dev jest@25 
+npm install --save-dev puppeteer@1
+npm install --save-dev portfinder@1
+*/
