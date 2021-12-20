@@ -16,6 +16,9 @@ node server.js // 소스 변경 시 재시작 O
 nodemon server.js // 소스 변경 시 재시작 X , nodemon 필요
 * npm install nodemon --save
 
+* express 라우팅 기본 개념 예제 / /a /b /c
+node 01-routing-example.js 
+
 Frontend react
 
 1. zxoo, yoon 으로 폴더 분리
@@ -38,6 +41,10 @@ jest를 사용하며 /lib/__tests__ 하위에 테스트를 진행할 코드를 �
 npm test ---watch --> --watch 매개변수로 제스트에 파라미터 전달
 npm test -- --coverage --> 단위테스트에 대한 결과를 정략적으로 확인
 
+5. 실행 환경 설정
+$ export NODE_ENV=production
+
+
 998. 프로젝트 파일 및 결로 설명
 meadowlark.js --> node 기본 테스트용 js
 
@@ -48,3 +55,13 @@ npm install --save-dev jest@25
 npm install --save-dev puppeteer@1
 npm install --save-dev portfinder@1
 */
+
+// POST Body Parser 패키지
+npm install body-parser@1
+
+// 세션&쿠키 관련 패키지
+npm install cookie-parser@1
+npm install express-session@1
+
+// 로그 관련 패키지
+npm install morgan
